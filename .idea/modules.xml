@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../Examples3/.idea/Examples3.iml" filepath="$PROJECT_DIR$/../../../Examples3/.idea/Examples3.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/RFDjango.iml" filepath="$PROJECT_DIR$/.idea/RFDjango.iml" />
       <module fileurl="file://$USER_HOME$/toDoList/.idea/toDoList.iml" filepath="$USER_HOME$/toDoList/.idea/toDoList.iml" />
       <module fileurl="file://$USER_HOME$/toDoList-FrontEnd/.idea/toDoList-FrontEnd.iml" filepath="$USER_HOME$/toDoList-FrontEnd/.idea/toDoList-FrontEnd.iml" />

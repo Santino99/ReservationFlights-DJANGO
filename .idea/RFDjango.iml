@@ -14,10 +14,11 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Pipenv (Progetto)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Pipenv (ReservationFlights-DJANGO)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="toDoList" />
     <orderEntry type="module" module-name="toDoList-FrontEnd" />
+    <orderEntry type="module" module-name="Examples3" />
   </component>
   <component name="PackageRequirementsSettings">
     <option name="requirementsPath" value="" />

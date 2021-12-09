@@ -11,6 +11,10 @@ coreapi = "*"
 pyyaml = "*"
 pytest-django = "*"
 mixer = "*"
+django-allauth = "*"
+dj-rest-auth = "*"
+coverage = "*"
+django-rest-allauth = "*"
 
 [dev-packages]
 
