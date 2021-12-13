@@ -10,13 +10,13 @@ class Ticket(models.Model):
     name = models.CharField(max_length=50, validators=[validate_len, RegexValidator(r'^[A-Z][a-z]*(?:\s[A-Z][a-z]*)*$')])
     surname = models.CharField(max_length=50, validators=[validate_len, RegexValidator(r'^[A-Z][a-z]*(?:\s[A-Z][a-z]*)*$')])
     departure = models.CharField(max_length=50, validators=[validate_len, RegexValidator(r'^[A-Z][a-z]*(?:\s[A-Z][a-z]*)*$')])
-    destination = models.CharField(max_length=50,validators=[validate_len, RegexValidator(r'^[A-Z][a-z]*(?:\s[A-Z][a-z]*)*$')])
+    destination = models.CharField(max_length=50, validators=[validate_len, RegexValidator(r'^[A-Z][a-z]*(?:\s[A-Z][a-z]*)*$')])
     price = models.DecimalField(max_digits=4, decimal_places=2, validators=[validate_price])
     departureDateTime = models.DateTimeField(validators=[validate_current_date])
     timeFlight = models.TimeField(validators=[validate_limit_min_time])
 
     def __str__(self):
-        return f'Name: {self.name}, Surname: {self.surname}, Departure: {self.departure}, Destination: {self.destination}, Price: {self.price}'
+        return f'Name: {self.name}, Surname: {self.surname}, Departure: {self.departure}, Destination: {self.destination}, Price: {self.price}, DepartureDateTime: {self.departureDateTime}, TimeFlight: {self.timeFlight}'
 
 '''
     def clean(self):
