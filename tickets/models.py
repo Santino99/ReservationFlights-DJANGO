@@ -16,17 +16,14 @@ class Ticket(models.Model):
     timeFlight = models.TimeField(validators=[validate_limit_min_time])
 
     def __str__(self):
-        return f'Name: {self.name}, Surname: {self.surname}, Departure: {self.departure}, Destination: {self.destination}, Price: {self.price}, DepartureDateTime: {self.departureDateTime}, TimeFlight: {self.timeFlight}'
+        return f'Name: {self.name}, Surname: {self.surname}, Departure: {self.departure}, Destination: {self.destination}, ' \
+               f'Price: {self.price}, DepartureDateTime: {self.departureDateTime}, TimeFlight: {self.timeFlight}'
 
-'''
-    def clean(self):
-        validate_date(self.departureDateTime, self.arrivalDateTime)
 
-    def save(self, *args, **kwargs):
-        self.clean()
-        super(Ticket,self).save(*args, **kwargs)
 
-    
-    def save(self, *args, **kwargs):
-        #self.clean()
-        return super().save(*args, **kwargs)'''
+
+
+
+
+
+

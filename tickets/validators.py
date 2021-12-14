@@ -17,7 +17,8 @@ def validate_price(value: decimal) -> None:
 
 def validate_current_date(date_start: datetime) -> None:
     current_date = datetime.datetime.now()
-    current_aware = datetime.datetime(current_date.year, current_date.month, current_date.day, current_date.hour, current_date.minute, current_date.second, current_date.microsecond, tzinfo=UTC)
+    current_aware = datetime.datetime(current_date.year, current_date.month, current_date.day, current_date.hour,
+                                      current_date.minute, current_date.second, current_date.microsecond, tzinfo=UTC)
 
     dt = (date_start - current_aware)
     if dt.days < 0:

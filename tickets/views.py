@@ -6,17 +6,7 @@ from rest_framework.response import Response
 
 from tickets.models import Ticket
 from tickets.permissions import IsAuthorOrReadOnly
-from tickets.serializers import TicketSerializer, AuthorSerializer
-
-'''
-class TicketList(generics.ListCreateAPIView):
-    queryset = Ticket.objects.all()
-    serializer_class = TicketSerializer
-
-
-class TicketDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Ticket.objects.all()
-    serializer_class = TicketSerializer'''
+from tickets.serializers import TicketSerializer, UserLoggedSerializer
 
 
 class TicketViewSet(viewsets.ModelViewSet):
@@ -49,9 +39,9 @@ class TicketViewSet(viewsets.ModelViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class GetIdAuthorView(RetrieveAPIView):
+class GetIdUserLoggedView(RetrieveAPIView):
     permission_classes = [IsAuthenticated]
-    serializer_class = AuthorSerializer
+    serializer_class = UserLoggedSerializer
 
     lookup_field = 'username'
 

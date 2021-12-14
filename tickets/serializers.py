@@ -9,7 +9,7 @@ class TicketSerializer(serializers.ModelSerializer):
         model = Ticket
 
 
-class AuthorSerializer(serializers.ModelSerializer):
+class UserLoggedSerializer(serializers.ModelSerializer):
     class Meta:
         fields = ('id',)
         model = get_user_model()

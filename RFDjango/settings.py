@@ -76,7 +76,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:8000', #dev server
     # add deploy server
-    # add front-end server
+    'http://localhost:4200', #front-end server
 ]
 
 ROOT_URLCONF = 'RFDjango.urls'
